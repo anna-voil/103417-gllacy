@@ -4,150 +4,150 @@
     <meta charset="UTF-8">
     <title>Каталог - Глэйси</title>
 </head>
-<>
-<header class="main-header">        <!--шапка сайта-->
-  <div class="container">           <!--центровщик-->
-    <nav class="main-navigation">   <!--контейнер списка навигации по сайту-->
-      <ul>
-        <li>
-          <a href="#" class="logo">
-            <img src="" width="" height="" alt="Главная - Мороженое Глэйси">
-          </a>
-        </li>
-        <li>
-          <a href="#">Каталог</a>
-        </li>
-        <li>
-          <a href="#">Доставка и оплата</a>
-        </li>
-        <li>
-          <a href="#">О компании</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="search">
-      <a href="#" class="search"></a>             <!--поле поиска-->
-      <input type="search" name="search">
+<body>
+  <header class="main-header">        <!--шапка сайта-->
+    <div class="container">           <!--центровщик-->
+      <nav class="main-navigation">   <!--контейнер списка навигации по сайту-->
+        <a href="#" class="logo">Главная</a>
+        <ul>
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="#">О компании</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search">
+        <a href="#" class="search"></a>             <!--поле поиска-->
+        <input type="search" name="search">
+      </div>
+      <div class="user-block">   <!--контейнер блока Вход-->
+        <a class="login" href="#">Вход</a>
+      </div>
+      <a class="cart" href="#">2 товара</a>                <!--КОРЗИНА ДОДЕЛАТЬ-->
     </div>
-    <div class="user-block">   <!--контейнер блока Вход-->
-      <a class="login" href="#">Вход</a>
-    </div>
-    <a class="cart" href="#">2 товара</a>                <!--КОРЗИНА ДОДЕЛАТЬ-->
-  </div>
-</header>
-<main>
+  </header>
+  <main>
 <div class="breadcrumbs">     <!--хлебные крошки-->
   <ul>
-    <li>Главная</li>
-    <li>Каталог</li>
-    <li>Сливочное</li>
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">Каталог</a></li>
+    <li><span>Сливочное</span></li>
   </ul>
 </div>
 <h1>Сливочное мороженое</h1>
 <form class="filter">
-  <label for="order">Сортировка:</label>          <!--Общая сортировка-->
-  <select id="order" class="filter-order">
-    <option value="order-popular" selected>по популярности</option>
-    <option value="order-cheap">сначала недорогие</option>
-    <option value="order-expensive">сначала дорогие</option>
-    <option value="order-fat">по жирности</option>
-  </select>
-  <div class="range-filter">
-    <label>Цена 100 руб. - 500 руб.</label>
-    <div class="range-controls">
-      <div class="toggle min-toggle">.</div>
-      <div class="toggle max-toggle">.</div>
+  <div class="form-wrapper">       <!--контейнер для 1 строки-->
+    <label for="order">Сортировка:</label>          <!--Общая сортировка-->
+    <select id="order" class="filter-order">
+      <option value="order-popular" selected>по популярности</option>
+      <option value="order-cheap">сначала недорогие</option>
+      <option value="order-expensive">сначала дорогие</option>
+      <option value="order-fat">по жирности</option>
+    </select>
+    <div class="range-filter">
+      <label>Цена 100 руб. - 500 руб.</label>
+      <div class="range-controls">
+        <div class="toggle min-toggle">.</div>
+        <div class="toggle max-toggle">.</div>
+      </div>
+    </div>
+    <div class="fatness">          <!--Фильтр Жирности-->
+      <p>Жирность:</p>
+      <div class="fatness-controls">
+        <label class="fatness-label">
+          <input type="radio" name="fatness" value="0"> 0%
+        </label>
+        <label class="fatness-label">
+          <input type="radio" name="fatness" value="10"> до 10%
+        </label>
+        <label class="fatness-label">
+          <input type="radio" name="fatness" value="30"> до 30%
+        </label>
+        <label class="fatness-label">
+          <input type="radio" name="fatness" value="more-30"> выше 30%
+        </label>
+      </div>
     </div>
   </div>
-  <div class="fatness">          <!--Фильтр Жирности-- вместо div - form?-->
-    <p>Жирность:</p>
-    <div class="fatness-controls">
-      <label class="fatness-label">
-        <input type="radio" name="fatness" value="0"> 0%
-      </label>
-      <label class="fatness-label">
-        <input type="radio" name="fatness" value="10"> до 10%
-      </label>
-      <label class="fatness-label">
-        <input type="radio" name="fatness" value="30"> до 30%
-      </label>
-      <label class="fatness-label">
-        <input type="radio" name="fatness" value="more-30"> выше 30%
-      </label>
+  <div class="form-wrapper">
+    <div class="additions">                     <!--Наполнители-->
+      <p>Наполнители:</p>
+      <input type="checkbox" name="chocolate" id="chocolate" checked> <!--Шоколадные-->
+      <label for="chocolate">шоколадные</label>
+      <input type="checkbox" name="sugar" id="sugar" checked>         <!--Сахарные присыпки-->
+      <label for="sugar">сахарные присыпки</label>
+      <input type="checkbox" name="fruits" id="fruits">               <!--Фрукты-->
+      <label for="fruits">фрукты</label>
+      <input type="checkbox" name="syrups" id="syrups">               <!--Сиропы-->
+      <label for="syrups">сиропы</label>
+      <input type="checkbox" name="chocolate" id="jam">               <!--Джемы-->
+      <label for="jam">джемы</label>
     </div>
+      <input type="submit" value="Применить">    <!--Кнопка отправки формы-->
   </div>
-  <form>                     <!--Наполнители-->
-    <p>Наполнители:</p>
-    <input type="checkbox" name="chocolate" id="chocolate" checked> <!--Шоколадные-->
-    <label for="chocolate">шоколадные</label>
-    <input type="checkbox" name="sugar" id="sugar" checked>         <!--Сахарные присыпки-->
-    <label for="sugar">сахарные присыпки</label>
-    <input type="checkbox" name="fruits" id="fruits">               <!--Фрукты-->
-    <label for="fruits">фрукты</label>
-    <input type="checkbox" name="syrups" id="syrups">               <!--Сиропы-->
-    <label for="syrups">сиропы</label>
-    <input type="checkbox" name="chocolate" id="jam">               <!--Джемы-->
-    <label for="jam">джемы</label>
-    <input type="submit" value="Применить">    <!--Кнопка отправки формы-->
-  </form>
 </form>
 <div class="wrapper">     <!--Общий контейнер для мороженого-->
-  <article class="catalog">   <!--Сливочное + апельсиновый джем-->
+  <article class="catalog-item">   <!--Сливочное + апельсиновый джем-->
     <img class="catalog-img" src=""  width="150" height="150" alt="Сливочное + апельсиновый джем">
     <p class="catalog-price">310 ₽/кг</p>
     <p class="catalog-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
   </article>
-  <article class="catalog">   <!--Кофейное + шоколад-->
+  <article class="catalog-item">   <!--Кофейное + шоколад-->
     <img class="catalog-img" src=""  width="150" height="150" alt="Кофейное + шоколад">
     <p class="catalog-price">380 ₽/кг</p>
     <p class="catalog-description">Сливочно-кофейное с кусочками шоколада</p>
   </article>
-  <article class="catalog">   <!--Клубничное + белый шоколад-->
+  <article class="catalog-item">   <!--Клубничное + белый шоколад-->
     <img class="catalog-img" src=""  width="150" height="150" alt="Клубничное + белый шоколад">
     <p class="catalog-price">310 ₽/кг</p>
     <p class="catalog-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
   </article>
-  <article class="catalog">   <!--Крем-брюле + карамель подливка-->
+  <article class="catalog-item">   <!--Крем-брюле + карамель подливка-->
     <img class="catalog-img" src=""  width="150" height="150" alt="Крем-брюле + карамель подливка">
     <p class="catalog-price">310 ₽/кг</p>
     <p class="catalog-description">Сливочное крем-брюле с карамельной подливкой</p>
   </article>
-  <article class="catalog">   <!--Сливочное + брусничный джем-->
+  <article class="catalog-item">   <!--Сливочное + брусничный джем-->
     <img class="catalog-img" src=""  width="150" height="150" alt="Сливочное + брусничный джем">
     <p class="catalog-price">325 ₽/кг</p>
     <p class="catalog-description">Сливочное с брусничным джемом</p>
   </article>
-  <article class="catalog">   <!--Сливочно-черничное-->
+  <article class="catalog-item">   <!--Сливочно-черничное-->
     <img class="catalog-img" src=""  width="150" height="150" alt="Сливочно-черничное">
     <p class="catalog-price">410 ₽/кг</p>
     <p class="catalog-description">Сливочно-черничное с цельными ягодами черники</p>
   </article>
-  <article class="catalog">   <!--Сливочно-лимонное-->
+  <article class="catalog-item">   <!--Сливочно-лимонное-->
     <img class="catalog-img" src=""  width="150" height="150" alt="Сливочно-лимонное + карамель">
     <p class="catalog-price">375 ₽/кг</p>
     <p class="catalog-description">Сливочно-лимонное с карамельной присыпкой</p>
   </article>
-  <article class="catalog">   <!--Сливочное + шоколадная стружка-->
+  <article class="catalog-item">   <!--Сливочное + шоколадная стружка-->
     <img class="catalog-img" src=""  width="150" height="150" alt="Сливочное + шоколадная стружка">
     <p class="catalog-price">320 ₽/кг</p>
     <p class="catalog-description">Сливочное с шоколадной стружкой</p>
   </article>
-  <article class="catalog">   <!--Сливочно-ванильное + шоколад-->
+  <article class="catalog-item">   <!--Сливочно-ванильное + шоколад-->
     <img class="catalog-img" src=""  width="150" height="150" alt="Сливочно-ванильное + шоколад">
     <p class="catalog-price">440 ₽/кг</p>
     <p class="catalog-description">Сливочно-ванильное с кусочками шоколада</p>
   </article>
-  <article class="catalog">   <!--Сливочное + ментол-->
+  <article class="catalog-item">   <!--Сливочное + ментол-->
     <img class="catalog-img" src=""  width="150" height="150" alt="Сливочное + ментол">
     <p class="catalog-price">435 ₽/кг</p>
     <p class="catalog-description">Сливочное с ментоловым сиропом</p>
   </article>
-  <article class="catalog">   <!--Сливочное + черный шоколад-->
+  <article class="catalog-item">   <!--Сливочное + черный шоколад-->
     <img class="catalog-img" src=""  width="150" height="150" alt="Сливочное + черный шоколад">
     <p class="catalog-price">355 ₽/кг</p>
     <p class="catalog-description">Сливочное с кусочками черного шоколада</p>
   </article>
-  <article class="catalog">   <!--Сливочное + мятный сироп-->
+  <article class="catalog-item">   <!--Сливочное + мятный сироп-->
     <img class="catalog-img" src=""  width="150" height="150" alt="Сливочное + мятный сироп">
     <p class="catalog-price">420 ₽/кг</p>
     <p class="catalog-description">Сливочное с мятным сиропом</p>
@@ -155,11 +155,13 @@
 </div>
 <div class="pager"> <!--Нумерация страниц-->
   <ul>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
+    <li><span><</span></li>
+    <li><span>1</span></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">></a></li>
   </ul>
 </div>
 </main>
