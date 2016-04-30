@@ -1,0 +1,132 @@
+ /*СТИЛИ И РАЗМЕРЫ ШРИФТОВ*/
+body{
+  font-family: "Roboto", "sans-serif";
+  background-color: #849d8f;
+  font-weight: bold;
+}
+.main-navigation a {
+  font-size: 16px;
+  line-height: 18px;
+}
+.header-contact-hours {
+  font-size: 14px;
+  line-height: 16px;
+}
+.header-contact-phone {
+  font-size: 22px;
+  line-height: 24px;
+}
+.slide p {
+  font-size: 60px;
+  line-height: 60px;
+}
+.button-big {
+  font-size: 32px;
+  line-height: 44px;
+}
+.option-title {
+  font-size: 35px;
+  line-height: 41px;
+}
+.option-info, .button {
+  font-size: 18px;
+  line-height: 22px;
+}
+.good-price {
+  /*разные размеры цены и кг*/
+}
+.good-description, .feature-info, .blog-post-label, .subscribe-text {
+  font-size: 16px;
+  line-height: 22px;
+}
+.general-description-title, .blog-post-title {
+  font-size: 24px;
+  line-height: 30px;
+}
+/*!!! Задать Размеры placeholder !!!*/
+.address-text {
+  font-size: 14px;
+  line-height: 20px;
+}
+.address-text-highlight {
+  font-size: 18px;
+  line-height: 24px;
+}
+.main-footer {
+  font-size: 13px;
+  line-height: 18px;
+}
+   /*ЦВЕТА*/
+body, a {
+  color: #ffffff;
+}
+.general-description, .blog-post, .blog-post-title, .address {
+  color: #323232;
+}
+.subscribe {
+  color: #5a5a5a;
+}
+a {
+   text-decoration: none;
+ }
+  /*ИЗОБРАЖЕНИЯ*/
+.search {
+  background: url("../img/Лупа.png") no-repeat;
+}
+.user-block {
+  background: url("../img/Вход.png") no-repeat;
+}
+.cart {
+  background: url("../img/Корзина.png") no-repeat;
+}
+.cart-full {
+  background: url("../img/Корзина заполнена.png") no-repeat;
+}
+.raspberry {
+  background: url("../img/raspberry.jpg") no-repeat;
+}
+.chocolate {
+  background: url("../img/chocolate.jpg") no-repeat;
+}
+.general-description {
+  background: url("../img/вафля.jpg");
+}
+.feature-technology {
+  background: url("../img/Мороженко.png") no-repeat;
+}
+.feature-raw {
+  background: url("../img/Корова.png") no-repeat;
+}
+.feature-providers {
+  background: url("../img/Листик.png") no-repeat;
+}
+.feature-delivery {
+  background: url("../img/Градусник.png") no-repeat;
+}
+.blog-post {
+  background: url("../img/фон с клубникой.jpg") no-repeat;
+}
+.subscribe {
+  background: #f8f7f4;
+}
+.map {
+  background: url("../img/карта.png") no-repeat;
+}
+.address {
+  /* background: #; !!! добавить Цвет Фона !!!*/
+}
+.social-btn-twitter {
+  background: url("../img/Твиттер.png") no-repeat;
+}
+.social-btn-instagram {
+  background: url("../img/Инста.png") no-repeat;
+}
+.social-btn-facebook {
+  background: url("../img/ФБ.png") no-repeat;
+}
+.social-btn-vk {
+  background: url("../img/ВК.png") no-repeat;
+}
+.heart {
+  background: url("../img/Сердце.png") no-repeat;
+}

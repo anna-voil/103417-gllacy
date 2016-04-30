@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Главная - Мороженое Глейси</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">        <!--шапка сайта-->
@@ -11,7 +12,7 @@
         <ul>
           <li>
             <a href="#" class="logo">
-              <img src="" width="" height="" alt="Главная - Мороженое Глэйси">
+              <img src="img/Лого.png" width="" height="" alt="Главная - Мороженое Глэйси">
             </a>
           </li>
           <li>
@@ -32,7 +33,9 @@
       <div class="user-block">   <!--контейнер блока Вход-->
         <a class="login" href="#">Вход</a>
       </div>
-     <a class="cart" href="#">Пусто</a>                <!--КОРЗИНА ДОДЕЛАТЬ-->
+      <div class="cart">
+        <a class="cart" href="#">Пусто</a>                <!--КОРЗИНА ДОДЕЛАТЬ-->
+      </div>
     </div>
   </header>
   <main>
@@ -41,7 +44,8 @@
       <p class="header-contact-phone">8 812 450-25-25</p>
     </div>
     <div class="slider">                             <!--ДОДЕЛАТЬ СЛАЙДЕР-->
-      <div class="slide">Слайд-1
+      <div class="slide">
+        <img src="img/центр.мороженки.png" width="" height="">
         <p>Крем брюле и пломбир с малиновым джемом</p>
         <a class="button button-big" href="#">Давайте оба!</a>        <!--кнопка-ссылка-->
       </div>
@@ -49,34 +53,34 @@
       <div class="slide">Слайд-3</div>
       <div class="controls"></div>
     </div>
-    <div class="option">                                              <!--МАЛИНА-->
+    <div class="option raspberry">                                              <!--МАЛИНА-->
       <h2 class="option-title">Малинка даром!</h2>
       <p class="option-info">при покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
       <a class="button" href="#">Хочу варенье!</a>
     </div>
-    <div class="option">                                              <!--ШОКОЛАД-->
+    <div class="option chocolate">                                              <!--ШОКОЛАД-->
       <h2 class="option-title">Шоколадки даром!</h2>
       <p class="option-info">при покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
       <a class="button" href="#">Хочу шоколадки!</a>
     </div>
     <div class="wrapper">     <!--Общий контейнер для мороженого-->
       <article class="catalog-item catalog-item-good">   <!--Сливочное-->
-        <img class="good-img" src=""  width="150" height="150" alt="сливочное">
+        <img class="good-img" src="img/1.png"  width="267" height="267" alt="сливочное">
         <p class="good-price">310 ₽/кг</p>
         <p class="good-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
       </article>
       <article class="catalog-item catalog-item-good">   <!--Кофейное-->
-        <img class="good-img" src=""  width="150" height="150" alt="Кофейное">
+        <img class="good-img" src="img/2.png"  width="" height="" alt="Кофейное">
         <p class="good-price">380 ₽/кг</p>
         <p class="good-description">Сливочно-кофейное с кусочками шоколада</p>
       </article>
       <article class="catalog-item catalog-item-good">   <!--Клубничное-->
-        <img class="good-img" src=""  width="150" height="150" alt="Клубничное">
+        <img class="good-img" src="img/3.png"  width="" height="" alt="Клубничное">
         <p class="good-price">310 ₽/кг</p>
         <p class="good-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
       </article>
       <article class="catalog-item catalog-item-good">   <!--Крем-брюле-->
-        <img class="good-img" src=""  width="150" height="150" alt="Крем-брюле">
+        <img class="good-img" src="img/4.png"  width="" height="" alt="Крем-брюле">
         <p class="good-price">310 ₽/кг</p>
         <p class="good-description">Сливочное крем-брюле с карамельной подливкой</p>
       </article>
@@ -102,7 +106,7 @@
       <a class="blog-post-title" href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </div>
     <form class="subscribe">                                              <!--Форма подписки-->
-      <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+      <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <input type="email" placeholder="Электронная почта">
       <input type="submit" name="email" value="Отправить">
     </form>
@@ -121,19 +125,21 @@
     <div class="container">                <!--центровщик-->
       <section class="footer-social">      <!--Социальные сети-->
         <a class="social-btn social-btn-twitter" href="#">twitter</a>
-        <a class="social-btn social-btn-vk" href="#">vk</a>
-        <a class="social-btn social-btn-facebook" href="#">facebook</a>
         <a class="social-btn social-btn-instagram" href="#">instagram</a>
+        <a class="social-btn social-btn-facebook" href="#">facebook</a>
+        <a class="social-btn social-btn-vk" href="#">vk</a>
+
+
       </section>
       <section class="footer-menu">      <!--Меню футера-->
-        <a class="footer-menu-link" href="#">Для поставщиков</a>
+        <a class="footer-menu-link heart" href="#">Для поставщиков</a>
         <a class="footer-menu-link" href="#">О производстве</a>
         <a class="footer-menu-link" href="#">Наши документы</a>
         <a class="footer-menu-link" href="#">Экологические стандарты</a>
       </section>
       <section class="footer-copyright">   <!--авторы-->
         <a href="#">
-          <img src="#" width="100" height="50"> <!--лого HTMLAcademy-->
+          <img src="img/ЛогоАкадемии.png" width="" height=""> <!--лого HTMLAcademy-->
         </a>
         <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
       </section>
