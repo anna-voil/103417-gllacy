@@ -3,18 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Главная - Мороженое Глейси</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">        <!--шапка сайта-->
-    <div class="container">           <!--центровщик-->
+    <div class="container clearfix">           <!--центровщик-->
       <nav class="main-navigation">   <!--контейнер списка навигации по сайту-->
+        <span class="logo">
+          <img src="img/logo-menu.png" width="156" height="65" alt="Главная - Мороженое Глэйси">
+        </span>
         <ul>
-          <li>
-            <a href="#" class="logo">
-              <img src="img/Лого.png" width="" height="" alt="Главная - Мороженое Глэйси">
-            </a>
-          </li>
           <li>
             <a href="#">Каталог</a>
           </li>
@@ -22,19 +21,21 @@
             <a href="#">Доставка и оплата</a>
           </li>
           <li>
-            <a href="#">О компании</a>
+            <a href="#">О Компании</a>
           </li>
         </ul>
       </nav>
-      <div class="search">
-        <a href="#" class="search"></a>             <!--поле поиска-->
-        <input type="search" name="search">
-      </div>
-      <div class="user-block">   <!--контейнер блока Вход-->
-        <a class="login" href="#">Вход</a>
-      </div>
-      <div class="cart">
-        <a class="cart" href="#">Пусто</a>                <!--КОРЗИНА ДОДЕЛАТЬ-->
+      <div class="user-block">
+        <div class="search user-block-item">
+          <a href="#" class="search"></a>             <!--поле поиска-->
+          <input type="search" name="search">
+        </div>
+        <div class="login user-block-item">   <!--контейнер блока Вход-->
+          <a class="login" href="#">Вход</a>
+        </div>
+        <div class="cart user-block-item">
+          <a class="cart" href="#">Пусто</a>                <!--КОРЗИНА ДОДЕЛАТЬ-->
+        </div>
       </div>
     </div>
   </header>
@@ -45,7 +46,7 @@
     </div>
     <div class="slider">                             <!--ДОДЕЛАТЬ СЛАЙДЕР-->
       <div class="slide">
-        <img src="img/центр.мороженки.png" width="" height="">
+        <img src="img/big-ice-center.png" width="647" height="584">
         <p>Крем брюле и пломбир с малиновым джемом</p>
         <a class="button button-big" href="#">Давайте оба!</a>        <!--кнопка-ссылка-->
       </div>

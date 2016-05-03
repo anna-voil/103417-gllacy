@@ -1,37 +1,91 @@
  /*СТИЛИ И РАЗМЕРЫ ШРИФТОВ*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body{
-  font-family: "Roboto", "sans-serif";
-  background-color: #849d8f;
+  min-width: 900px;
+  background: url("../img/background-1200.jpg") no-repeat top center;
+
+
   font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Roboto", "Arial", "sans-serif";
+  color: #ffffff;
+}
+.clearfix:after {
+  content: "";
+
+  display: table;
+  clear: both;
+
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+
+  border: solid yellow;
+}
+.main-header {
+  margin-bottom: 10px;
+}
+.main-navigation {
+  float: left;
+  width: 560px;
+  min-height: 70px;
+  margin-left: -6px;
+
+
+  border: solid red;
+}
+.main-navigation ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-left: 25px;
+  vertical-align: 27px;
+
+  list-style: none;
+}
+.main-navigation li {
+  display: inline-block;
+  margin-right: 25px;
+}
+.main-navigation li:last-child {
+  margin-right: 0;
 }
 .main-navigation a {
-  font-size: 16px;
-  line-height: 18px;
+  padding: 0;
+
+  color: #ffffff;
+  text-decoration: underline; /*ЗАДАТЬ ПОДЧЕРКИВАНИЯ*/
 }
-.header-contact-hours {
-  font-size: 14px;
-  line-height: 16px;
+.main-navigation a:hover {    /*ЗАДАТЬ ПОВЕДЕНИЕ ПОСЛЕ НАВЕДЕНИЯ*/
+
 }
-.header-contact-phone {
-  font-size: 22px;
-  line-height: 24px;
+.user-block {
+  float: right;
+  max-width: 560px;
+
+  border: solid greenyellow;
 }
-.slide p {
-  font-size: 60px;
-  line-height: 60px;
+.user-block-item {
+  display: inline-block;
 }
-.button-big {
-  font-size: 32px;
-  line-height: 44px;
+.search input {            /*СКРЫТЫЙ ИНПУТ*/
+  display: none;
 }
-.option-title {
-  font-size: 35px;
-  line-height: 41px;
-}
-.option-info, .button {
-  font-size: 18px;
-  line-height: 22px;
-}
+
+
+
+
+
+
+
 .good-price {
   /*разные размеры цены и кг*/
 }
@@ -69,64 +123,3 @@ body, a {
 a {
    text-decoration: none;
  }
-  /*ИЗОБРАЖЕНИЯ*/
-.search {
-  background: url("../img/Лупа.png") no-repeat;
-}
-.user-block {
-  background: url("../img/Вход.png") no-repeat;
-}
-.cart {
-  background: url("../img/Корзина.png") no-repeat;
-}
-.cart-full {
-  background: url("../img/Корзина заполнена.png") no-repeat;
-}
-.raspberry {
-  background: url("../img/raspberry.jpg") no-repeat;
-}
-.chocolate {
-  background: url("../img/chocolate.jpg") no-repeat;
-}
-.general-description {
-  background: url("../img/вафля.jpg");
-}
-.feature-technology {
-  background: url("../img/Мороженко.png") no-repeat;
-}
-.feature-raw {
-  background: url("../img/Корова.png") no-repeat;
-}
-.feature-providers {
-  background: url("../img/Листик.png") no-repeat;
-}
-.feature-delivery {
-  background: url("../img/Градусник.png") no-repeat;
-}
-.blog-post {
-  background: url("../img/фон с клубникой.jpg") no-repeat;
-}
-.subscribe {
-  background: #f8f7f4;
-}
-.map {
-  background: url("../img/карта.png") no-repeat;
-}
-.address {
-  /* background: #; !!! добавить Цвет Фона !!!*/
-}
-.social-btn-twitter {
-  background: url("../img/Твиттер.png") no-repeat;
-}
-.social-btn-instagram {
-  background: url("../img/Инста.png") no-repeat;
-}
-.social-btn-facebook {
-  background: url("../img/ФБ.png") no-repeat;
-}
-.social-btn-vk {
-  background: url("../img/ВК.png") no-repeat;
-}
-.heart {
-  background: url("../img/Сердце.png") no-repeat;
-}
