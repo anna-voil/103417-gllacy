@@ -10,7 +10,7 @@ body{
   background: url("../img/background-1200.jpg") no-repeat top center;
 
 
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   font-family: "Roboto", "Arial", "sans-serif";
@@ -28,19 +28,17 @@ body{
   margin: 0 auto;
   padding: 0 27px;
 
-  border: solid yellow;
 }
 .main-header {
   margin-bottom: 10px;
 }
+.logo {
+  display: inline-block;
+}
 .main-navigation {
-  float: left;
+  display: inline-block;
   width: 560px;
-  min-height: 70px;
   margin-left: -6px;
-
-
-  border: solid red;
 }
 .main-navigation ul {
   display: inline-block;
@@ -58,6 +56,12 @@ body{
 .main-navigation li:last-child {
   margin-right: 0;
 }
+.logo {
+  width: 156px;
+  height: 65px;
+  background: url("../img/logo-menu.png");
+  color: #ffffff;
+}
 .main-navigation a {
   padding: 0;
 
@@ -70,8 +74,6 @@ body{
 .user-block {
   float: right;
   max-width: 560px;
-
-  border: solid greenyellow;
 }
 .user-block-item {
   display: inline-block;
@@ -79,42 +81,134 @@ body{
 .search input {            /*СКРЫТЫЙ ИНПУТ*/
   display: none;
 }
-
-
-
-
-
-
-
-.good-price {
-  /*разные размеры цены и кг*/
+.header-contact {
+  float: right;
 }
-.good-description, .feature-info, .blog-post-label, .subscribe-text {
-  font-size: 16px;
-  line-height: 22px;
+.slider {                 /* !!!СЛАЙДЕР!!! */
+  text-align: center;
 }
-.general-description-title, .blog-post-title {
-  font-size: 24px;
-  line-height: 30px;
+.options {
+  font-size: 0;
 }
-/*!!! Задать Размеры placeholder !!!*/
-.address-text {
-  font-size: 14px;
-  line-height: 20px;
+.option {
+  display: inline-block;
+  padding: 20px 25px;
+  width: 560px;
+  height: 230px;
 }
-.address-text-highlight {
+.option h2 {
+  margin: 0;
+  font-size: 35px;
+  line-height: 41px;
+}
+.option p {
+  font-size: 18px;
+}
+.raspberry {
+  background: url("../img/raspberry.jpg") no-repeat;
+  margin-right: 26px;
+}
+.chocolate {
+  background: url("../img/chocolate.jpg") no-repeat;
+}
+.button {        /*КНОПКИ*/
+  float: right;
   font-size: 18px;
   line-height: 24px;
 }
-.main-footer {
-  font-size: 13px;
-  line-height: 18px;
+.wrapper {
+  font-size: 0;
+}
+.catalog-item {
+  display: inline-block;
+  width: 267px;
+  height: 400px;
+  margin-right: 26px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.catalog-item:last-child {
+  margin-right: 0;
+}
+.good-price, .catalog-price {
+  font-size: 45px;
+  line-height: 45px;
+}
+.good-price span, .catalog-price span {
+  font-size: 30px;
+}
+.general-description {
+  font-size: 0;
+  color: #323232;
+  padding: 30px 20px;
+
+  background: url("../img/waffle.jpg");
+}
+.general-description h2 {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+}
+.feature {
+  font-size: 16px;
+  line-height: 22px;
+  display: inline-block;
+  max-width: 540px;
+}
+.feature-technology {            /* !!!ВСТАВИТЬ СПРАЙТ!!! */
+
+}
+.feature-raw {
+
+}
+.feature-providers {
+
+}
+.feature-delivery {
+
+}
+.blog-subscribe {
+  font-size: 0;
+}
+.news {
+  display: inline-block;
+  width: 560px;
+  height: 220px;
+  padding: 20px 25px;
+}
+.blog-post {
+  vertical-align: top;
+  background: #f8f7f4 url("../img/background-ice-strawberries.jpg") no-repeat;
+}
+.blog-post-label {
+  font-size: 16px;
+  line-height: 22px;
+}
+.blog-post-title {
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: underline;
+}
+.subscribe {
+  font-size: 16px;
+  line-height: 22px;
+  background: #f8f7f4;
+}
+.map {
+  min-height: 430px;
+  background: url("../img/map.png") no-repeat center;
+}
+.address {
+  position: absolute;
+  right: 27px;
+
+  width: 300px;
 }
    /*ЦВЕТА*/
 body, a {
   color: #ffffff;
 }
-.general-description, .blog-post, .blog-post-title, .address {
+.blog-post, .blog-post-title, .address {
   color: #323232;
 }
 .subscribe {
