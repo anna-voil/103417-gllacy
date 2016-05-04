@@ -7,7 +7,7 @@ html {
 }
 body{
   min-width: 900px;
-  background: url("../img/background-1200.jpg") no-repeat top center;
+  background: #849d8f /*url("../img/background-1200.jpg") no-repeat top center*/;
 
 
   font-weight: 500;
@@ -27,7 +27,6 @@ body{
   width: 1200px;
   margin: 0 auto;
   padding: 0 27px;
-
 }
 .main-header {
   margin-bottom: 10px;
@@ -39,13 +38,14 @@ body{
   display: inline-block;
   width: 560px;
   margin-left: -6px;
+  padding: 10px 0;
 }
 .main-navigation ul {
   display: inline-block;
   margin: 0;
   padding: 0;
   margin-left: 25px;
-  vertical-align: 27px;
+  vertical-align: top;
 
   list-style: none;
 }
@@ -72,15 +72,42 @@ body{
 
 }
 .user-block {
+  margin: 20px auto;
+  padding: 10px;
+  vertical-align: top;
+
   float: right;
   max-width: 560px;
+
+  height: 40px;     /*ЗАДАТЬ ПРАВИЛЬНУЮ ВЫСОТУ*/
+
+  border: solid greenyellow;
 }
-.user-block-item {
+.user-block a {
+}
+
+ /*СПРАЙТ*/
+
+
+.search {               /*ПОИСК*/
   display: inline-block;
+
 }
-.search input {            /*СКРЫТЫЙ ИНПУТ*/
-  display: none;
+
+.login {                /*ВХОД*/
+  display: inline-block;
+
 }
+
+.cart {                /*КОРЗИНА*/
+  display: inline-block;
+
+}
+
+
+
+
+
 .header-contact {
   float: right;
 }
@@ -177,6 +204,8 @@ body{
   padding: 20px 25px;
 }
 .blog-post {
+  margin-right: 26px;
+  color: #323232;
   vertical-align: top;
   background: #f8f7f4 url("../img/background-ice-strawberries.jpg") no-repeat;
 }
@@ -185,11 +214,13 @@ body{
   line-height: 22px;
 }
 .blog-post-title {
+  color: #323232;
   font-size: 24px;
   line-height: 30px;
   text-decoration: underline;
 }
 .subscribe {
+  color: #5a5a5a;
   font-size: 16px;
   line-height: 22px;
   background: #f8f7f4;
@@ -200,20 +231,40 @@ body{
 }
 .address {
   position: absolute;
-  right: 27px;
+  right: 10%;
+  background: #ffffff;
+  color: #323232;
 
   width: 300px;
+  height: 305px;
+  padding: 30px 25px;
 }
+.main-footer {
+  min-height: 100px;
+  background: #849d8f;
+}
+.footer-item {
+
+}
+.footer-social {
+  float: left;
+}
+.footer-menu {
+  margin: auto;
+}
+.footer-copyright {
+  float: right;
+}
+
+
+/*РАЗМЕТКА СТРАНИЦЫ КАТАЛОГА*/
+.breadcrumbs li {
+  display: inline-block;
+}
+
    /*ЦВЕТА*/
-body, a {
-  color: #ffffff;
-}
-.blog-post, .blog-post-title, .address {
-  color: #323232;
-}
-.subscribe {
-  color: #5a5a5a;
-}
 a {
-   text-decoration: none;
- }
+  text-decoration: none;
+  color: #ffffff;
+
+}
