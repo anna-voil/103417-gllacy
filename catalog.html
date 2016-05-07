@@ -9,7 +9,7 @@
   <header class="main-header">        <!--шапка сайта-->
     <div class="container clearfix">           <!--центровщик-->
       <a href="index.html" class="logo">Главная</a>
-      <nav class="main-navigation">   <!--контейнер списка навигации a hсайту-->
+      <nav class="main-navigation">   <!--контейнер списка навигации-->
         <ul>
           <li>
             <a href="#">Каталог</a>
@@ -24,7 +24,6 @@
       </nav>
       <div class="search">
         <a href="#" class="search"></a>             <!--поле поиска-->
-        <input type="search" name="search">
       </div>
       <div class="user-block">   <!--контейнер блока Вход-->
         <a class="login" href="#">Вход</a>
@@ -47,7 +46,7 @@
       <h1>Сливочное мороженое</h1>
       <form class="filter">
         <div class="form-wrapper">       <!--контейнер для 1 строки-->
-          <label for="order">Сортировка:</label>          <!--Общая сортировка-->
+          <label for="order">Сортировка:</label>          <!--Общая сортировка-->   !!!
           <select id="order" class="filter-order">
             <option value="order-popular" selected>по популярности</option>
             <option value="order-cheap">сначала недорогие</option>
@@ -55,13 +54,13 @@
             <option value="order-fat">по жирности</option>
           </select>
           <div class="range-filter">
-            <label>Цена 100 руб. - 500 руб.</label>
+            <label>Цена 100 руб. - 500 руб.</label>   !!!
             <div class="range-controls">
               <div class="toggle min-toggle">.</div>
               <div class="toggle max-toggle">.</div>
             </div>
           </div>
-          <div class="fatness">          <!--Фильтр Жирности-->
+          <div class="fatness">          <!--Фильтр Жирности--> !!!
             <p>Жирность:</p>
             <div class="fatness-controls">
               <label class="fatness-label">
@@ -79,7 +78,7 @@
             </div>
           </div>
         </div>
-        <div class="form-wrapper">
+        <div class="form-wrapper">       <!--Контейнер для 2 строки-->
           <div class="additions">                     <!--Наполнители-->
             <p>Наполнители:</p>
             <input type="checkbox" name="chocolate" id="chocolate" checked> <!--Шоколадные-->
