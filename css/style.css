@@ -34,8 +34,6 @@ body > input[type="radio"] {
   margin-bottom: 10px;
 }
 .logo-menu-wrapper {
-  display: inline-block;
-  vertical-align: middle;
   float: left;
   width: 156px;
   height: 65px;
@@ -75,15 +73,11 @@ body > input[type="radio"] {
 .main-navigation a:hover {    /*ЗАДАТЬ ПОВЕДЕНИЕ ПОСЛЕ НАВЕДЕНИЯ*/
 
 }
-.user-block {
+.user-block-wrapper {
   width: 270px;
   float: right;
 }
-.user-block-wrapper {
-  font-size: 0;
-  vertical-align: top;
-
-  float: right;
+.user-block {
   width: 270px;
   padding-left: 9px;
   margin: 13px 0;
@@ -176,7 +170,7 @@ body > input[type="radio"] {
 }
 
 .header-contact {
-  float: right;
+  text-align: right;
   margin: 4px 0;
 }
 .header-contact-hours {
@@ -211,8 +205,8 @@ body > input[type="radio"] {
   width: 560px;
   height: 230px;
   border-radius: 17px 17px 17px 17px;
-
 }
+
 .option h2 {
   margin: 0;
   font-size: 35px;
@@ -256,7 +250,7 @@ body > input[type="radio"] {
 .catalog-item:nth-child(4n) {
  margin-right: 0;
 }
-.catalog-item:before {            /*ИЗОБРАЖЕНИЕ ХИТ*/
+.catalog-item-hit:before {            /*ИЗОБРАЖЕНИЕ ХИТ*/
   content: "";
   position: absolute;
   top: 0;
@@ -265,22 +259,22 @@ body > input[type="radio"] {
   width: 60px;
   height: 60px;
 
-  background: url("../img/good.png");
+  background: url("../img/hit.png");
   background-position: 60px 61px;
 }
 
-.good-price, .catalog-price {   /*СПИСОК МОРОЖЕНОГО*/
+.catalog-item-price, .catalog-price {   /*СПИСОК МОРОЖЕНОГО*/
   margin: 0;
   margin-top: -70px;
   margin-bottom: 25px;
   font-size: 45px;
   line-height: 45px;
 }
-.good-description, .catalog-description {
+.catalog-item-description, .catalog-description {
   margin: 0;
   text-align: center;
 }
-.good-price span, .catalog-price span {
+.catalog-item-price span, .catalog-price span {
   font-size: 30px;
 }
 .general-description {
@@ -366,7 +360,7 @@ body > input[type="radio"] {
   background-position: 49px 50px;
 }
 
-.blog-subscribe {
+.blog-subscribe-wrapper {
   font-size: 0;
   margin-bottom: 40px;
 }
