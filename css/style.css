@@ -41,6 +41,10 @@ body > input[type="radio"] {
   display: inline-block;
   vertical-align: middle;
 
+  text-indent: 100%;     /*скрыть текст*/
+  white-space: nowrap;
+  overflow: hidden;
+
   width: 156px;
   height: 65px;
   background: url("../img/logo.png");
@@ -512,10 +516,6 @@ body > input[type="radio"] {
 .breadcrumbs li {
   display: inline-block;
 }
-
-
-
-
 
 
 .filter {
