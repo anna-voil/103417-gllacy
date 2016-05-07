@@ -35,16 +35,22 @@ body > input[type="radio"] {
 }
 .logo-menu-wrapper {
   float: left;
+  width: 560px;
+}
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+
   width: 156px;
   height: 65px;
-  background: url("../img/logo-menu.png");
+  background: url("../img/logo.png");
   color: #ffffff;
 }
 .main-navigation {
   display: inline-block;
   vertical-align: middle; /* !!!!!!проверить ширину и font-size!!!!! */
-  width: 560px;
   padding: 10px 0;
+  width: 385px;
 }
 .main-navigation ul {
   display: inline-block;
@@ -79,7 +85,6 @@ body > input[type="radio"] {
 }
 .user-block {
   width: 270px;
-  padding-left: 9px;
   margin: 13px 0;
 }
 
@@ -171,8 +176,8 @@ body > input[type="radio"] {
 
 .header-contact {
   text-align: right;
-  margin: 4px 0;
 }
+
 .header-contact-hours {
   float: right;
   font-weight: 400;
@@ -191,8 +196,6 @@ body > input[type="radio"] {
   overflow: hidden;
    height: 505px            /* !!!СЛАЙДЕР!!! */
 }
-
-
 
 .options {
   font-size: 0;
@@ -505,12 +508,24 @@ body > input[type="radio"] {
 
 
 /*РАЗМЕТКА СТРАНИЦЫ КАТАЛОГА*/
+
 .breadcrumbs li {
   display: inline-block;
 }
 
+
+
+
+
+
+.filter {
+  display: block;
+  width: 850px;
+  margin-bottom: 40px;
+}
+
 .form-wrapper {
-  display: inline-block;
+  display: block;
 
   background: gray;
 }

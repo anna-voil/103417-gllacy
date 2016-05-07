@@ -6,10 +6,13 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="main-header">        <!--шапка сайта-->
-    <div class="container clearfix">           <!--центровщик-->
-      <a href="index.html" class="logo">Главная</a>
-      <nav class="main-navigation">   <!--контейнер списка навигации-->
+<header class="main-header">        <!--шапка сайта-->
+  <div class="container clearfix">           <!--центровщик-->
+    <div class="logo-menu-wrapper">
+      <div class="logo">
+        <img src="img/logo.png" width="156" height="65" alt="Главная - Мороженое Глэйси">
+      </div>
+      <nav class="main-navigation">   <!--контейнер списка навигации по сайту-->
         <ul>
           <li>
             <a href="#">Каталог</a>
@@ -18,21 +21,30 @@
             <a href="#">Доставка и оплата</a>
           </li>
           <li>
-            <a href="#">О компании</a>
+            <a href="#">О Компании</a>
           </li>
         </ul>
       </nav>
-      <div class="search">
-        <a href="#" class="search"></a>             <!--поле поиска-->
+    </div>
+    <div class="user-block-wrapper">
+      <div class="user-block">
+        <div class="user-search">
+          <a href="#" class="search"></a>             <!--поле поиска-->
+        </div>
+        <div class="user-login">   <!--контейнер блока Вход-->
+          <a class="login" href="#">Вход</a>
+        </div>
+        <div class="user-cart">
+          <a class="cart" href="#">Пусто</a>                <!--КОРЗИНА ДОДЕЛАТЬ-->
+        </div>
       </div>
-      <div class="user-block">   <!--контейнер блока Вход-->
-        <a class="login" href="#">Вход</a>
-      </div>
-      <div class="cart cart-full">
-        <a class="cart" href="#">2 товара</a>                <!--КОРЗИНА ДОДЕЛАТЬ-->
+      <div class="header-contact">                     <!--график работы, телефон-->
+        <p class="header-contact-hours">С 10 до 20, ежедневно</p>
+        <p class="header-contact-phone">8 812 450-25-25</p>
       </div>
     </div>
-  </header>
+  </div>
+</header>
   <main>
     <div class="container clearfix">           <!--центровщик-->
 
@@ -186,7 +198,7 @@
     </section>
     <section class="footer-copyright">   <!--авторы-->
       <a href="#">
-        <img src="img/ЛогоАкадемии.png" width="" height=""> <!--лого HTMLAcademy-->
+        <img src="img/logo-academy.png" width="" height=""> <!--лого HTMLAcademy-->
       </a>
       <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
     </section>
