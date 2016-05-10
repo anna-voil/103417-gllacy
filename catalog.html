@@ -3,7 +3,9 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>Каталог - Глэйси</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">        <!--шапка сайта-->
@@ -13,14 +15,21 @@
         Глэйси
       </div>
       <nav class="main-navigation">   <!--контейнер списка навигации по сайту-->
-        <ul>
-          <li>
+        <ul class="menu">
+          <li class="main-navigation-item active">
             <a href="#">Каталог</a>
+            <ul class="catalog-sub-menu">
+              <li><a href="#">Новинки</a></li>
+              <li class="active"><a href="#">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
           </li>
-          <li>
+          <li class="main-navigation-item">
             <a href="#">Доставка и оплата</a>
           </li>
-          <li>
+          <li class="main-navigation-item">
             <a href="#">О Компании</a>
           </li>
         </ul>
@@ -47,28 +56,47 @@
       <div class="breadcrumbs">     <!--хлебные крошки-->
         <ul>
           <li><a href="#">Главная</a></li>
-          <li><a href="#">Каталог</a></li>
+          <li>
+            <a href="#">Каталог</a>
+          </li>
           <li><span>Сливочное</span></li>
         </ul>
       </div>
       <h1>Сливочное мороженое</h1>
       <form class="filter">
         <div class="form-wrapper">       <!--контейнер для 1 строки-->
-          <label for="order">Сортировка:</label>          <!--Общая сортировка-->   !!!
-          <select id="order" class="filter-order">
-            <option value="order-popular" selected>по популярности</option>
-            <option value="order-cheap">сначала недорогие</option>
-            <option value="order-expensive">сначала дорогие</option>
-            <option value="order-fat">по жирности</option>
-          </select>
+          <div class="filter-order-wrapper">
+            <label for="order">Сортировка:</label>          <!--Общая сортировка-->
+            <select id="order" class="filter-order">
+              <option value="order-popular" selected>по популярности</option>
+              <option value="order-cheap">сначала недорогие</option>
+              <option value="order-expensive">сначала дорогие</option>
+              <option value="order-fat">по жирности</option>
+            </select>
+          </div>
           <div class="range-filter">
-            <label>Цена 100 руб. - 500 руб.</label>   !!!
+            <label class="range-filter-price">Цена 100 руб. - 500 руб.</label>
             <div class="range-controls">
-              <div class="toggle min-toggle">.</div>
-              <div class="toggle max-toggle">.</div>
+              <div class="scale">
+                <div class="bar" style="margin-left:25px;width:100px;"></div>
+              </div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
             </div>
           </div>
-          <div class="fatness">          <!--Фильтр Жирности--> !!!
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="fatness">          <!--Фильтр Жирности-->
             <p>Жирность:</p>
             <div class="fatness-controls">
               <label class="fatness-label">
@@ -89,18 +117,20 @@
         <div class="form-wrapper">       <!--Контейнер для 2 строки-->
           <div class="additions">                     <!--Наполнители-->
             <p>Наполнители:</p>
-            <input type="checkbox" name="chocolate" id="chocolate" checked> <!--Шоколадные-->
-            <label for="chocolate">шоколадные</label>
-            <input type="checkbox" name="sugar" id="sugar" checked>         <!--Сахарные присыпки-->
-            <label for="sugar">сахарные присыпки</label>
-            <input type="checkbox" name="fruits" id="fruits">               <!--Фрукты-->
-            <label for="fruits">фрукты</label>
-            <input type="checkbox" name="syrups" id="syrups">               <!--Сиропы-->
-            <label for="syrups">сиропы</label>
-            <input type="checkbox" name="chocolate" id="jam">               <!--Джемы-->
-            <label for="jam">джемы</label>
+              <div class="additions-options">
+                <input type="checkbox" name="chocolate" id="chocolate" checked> <!--Шоколадные-->
+                <label for="chocolate">шоколадные</label>
+                <input type="checkbox" name="sugar" id="sugar" checked>         <!--Сахарные присыпки-->
+                <label for="sugar">сахарные присыпки</label>
+                <input type="checkbox" name="fruits" id="fruits">               <!--Фрукты-->
+                <label for="fruits">фрукты</label>
+                <input type="checkbox" name="syrups" id="syrups">               <!--Сиропы-->
+                <label for="syrups">сиропы</label>
+                <input type="checkbox" name="chocolate" id="jam">               <!--Джемы-->
+                <label for="jam">джемы</label>
+              </div>
           </div>
-            <input type="submit" value="Применить">    <!--Кнопка отправки формы-->
+            <input class="filter-button" type="submit" value="Применить">    <!--Кнопка отправки формы-->
         </div>
       </form>
       <div class="wrapper">     <!--Общий контейнер для мороженого-->
@@ -187,10 +217,14 @@
       <a class="social-btn social-btn-instagram" href="#">instagram</a>
     </section>
     <section class="footer-menu">      <!--Меню футера-->
-      <a class="footer-menu-link" href="#">Для поставщиков</a>
-      <a class="footer-menu-link" href="#">О производстве</a>
-      <a class="footer-menu-link" href="#">Наши документы</a>
-      <a class="footer-menu-link" href="#">Экологические стандарты</a>
+      <div class="footer-menu-left">
+        <a class="footer-menu-link heart" href="#">Для поставщиков</a>
+        <a class="footer-menu-link" href="#">О производстве</a>
+      </div>
+      <div class="footer-menu-right">
+        <a class="footer-menu-link" href="#">Наши документы</a>
+        <a class="footer-menu-link" href="#">Экологические стандарты</a>
+      </div>
     </section>
     <section class="footer-copyright">   <!--авторы-->
       <a href="#">
