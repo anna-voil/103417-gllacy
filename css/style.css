@@ -95,7 +95,7 @@ body > input[type="radio"] {
 }
 
 
-.button {        /*КНОПКИ*/
+.button, input[name="email"] {        /*КНОПКИ*/
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -358,7 +358,7 @@ body > input[type="radio"] {
   vertical-align: middle;
 
 }
-.search:before {
+.search::before {
   content: "";
   position: absolute;
   top: -1px;
@@ -370,6 +370,16 @@ body > input[type="radio"] {
   background: url("../img/sprite-white-header.png");
   background-position: 0 -20px;
 }
+
+.user-search:hover, .user-login:hover, .user-cart:hover {
+  background: #f8f7f4;
+}
+.search:hover::before {
+  background: url("../img/sprite-black-header.png");
+}
+
+
+
 .login {                /*ВХОД*/
   position: relative;
 
@@ -389,6 +399,10 @@ body > input[type="radio"] {
   background: url("../img/sprite-white-header.png");
   background-position: 55px 0;
 }
+.login:hover::before {
+  background: url("../img/sprite-black-header.png");
+  background-position: 90px 0;
+}
 
 .cart {                /*КОРЗИНА*/
   position: relative;
@@ -398,7 +412,7 @@ body > input[type="radio"] {
   width: 117px;
 
 }
-.cart:before {
+.cart-empty::before {
   content: "";
   position: absolute;
   top: 0;
@@ -409,6 +423,33 @@ body > input[type="radio"] {
 
   background: url("../img/sprite-white-header.png");
   background-position: 20px 0;
+}
+.cart-empty:hover::before {
+  background: url("../img/sprite-black-header.png");
+  background-position: 53px 0;
+}
+.cart-full {
+  position: relative;
+}
+.cart-full::before {
+  position: absolute;
+  top: 0;
+  left: 17px;
+
+  width: 20px;
+  height: 20px;
+
+  content: "";
+  background: url("../img/sprite-black-header.png");
+  background-position: 20px 0;
+  color: black;
+  font-weight: 400;
+}
+
+
+.user-block a:hover {
+  color: black;
+  font-weight: 400;
 }
 
 .header-contact {
@@ -628,18 +669,25 @@ body > input[type="radio"] {
   text-decoration: underline;
 }
 .subscribe {
+  position: relative;
+
   display: inline-block;
   vertical-align: middle;
   width: 560px;
   height: 220px;
-  padding: 20px 25px;
+  padding: 35px 25px;
   color: #5a5a5a;
   font-size: 16px;
   line-height: 22px;
-  background: #f8f7f4;
-                              /*!!!!!!!РАМКА-ГРАДИЕНТ!!!!!*/
+  background: #f8f7f4 url("../img/background-mail.png");
+
   border-radius: 15px;
 }
+.subscribe input[name="email"] {
+  bottom: 40px;
+  right: 25px;
+}
+
 .map {
   position: relative;
   min-height: 430px;
@@ -819,6 +867,7 @@ body > input[type="radio"] {
 
   -webkit-appearance: none;
   -moz-appearance: none;
+
 
 }
 
@@ -1058,7 +1107,7 @@ body > input[type="radio"] {
 
 }
 
-.feedback-form .button {
+.feedback-form .button, input[name="email"] {
   border: none;
   /*outline: none;*/
 }
