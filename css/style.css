@@ -778,7 +778,6 @@ body > input[type="radio"] {
   display: inline-block;
 }
 
-
 .filter {
   display: block;
   width: 850px;
@@ -803,6 +802,15 @@ body > input[type="radio"] {
 .filter-order-wrapper label {
   margin-left: 18px;
 }
+.filter-order-wrapper select {
+  width: 193px;
+  height: 32px;
+  background-color: #9db1a5;
+  border: none;
+  border-radius: 16px;
+  color: white;
+}
+
 
 
         /*ПОЛЗУНКИ С ЦЕНОЙ*/
@@ -904,7 +912,9 @@ body > input[type="radio"] {
   height: 30px;
   list-style-type: none;
 }
+.filter-order-wrapper select {
 
+}
 
 
 
@@ -917,9 +927,10 @@ body > input[type="radio"] {
   margin-left: -240px;
 
   width: 480px;
-  padding: 50px 80px;
+  padding: 20px 25px;
   color: #000000;
   background: #f8f7f4;
+  border-radius: 10px;
 }
 .modal-content-close {
   position: absolute;
@@ -930,8 +941,7 @@ body > input[type="radio"] {
   height: 22px;
 
   font-size: 0;
-
-  background-color: red;
+  background: none;
   border: 0;
   outline: 0;
   cursor: pointer;
@@ -955,4 +965,42 @@ body > input[type="radio"] {
 
 .modal-content-close::after {
   transform: rotate(-45deg);
+}
+
+.modal-content p {
+  margin: 0;
+  font-size: 24px;
+}
+.modal-content .feedback-form {
+  margin-top: 25px;
+}
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  width: 267px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  padding-right: 40px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.feedback-form .user-message {
+  width: 430px;
+  height: 155px;
+  margin-bottom: 65px;
+
+
+
+}
+
+.feedback-form .button {
+  border: none;
+  /*outline: none;*/
 }
