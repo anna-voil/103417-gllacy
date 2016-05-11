@@ -877,7 +877,7 @@ body > input[type="radio"] {
 .fatness-controls {
   width: 415px;
   height: 36px;
-  padding: 5px 18px;
+  padding: 8px 18px;
   background: #9db1a5;
   border-radius: 18px;
 }
@@ -898,7 +898,7 @@ body > input[type="radio"] {
 .fatness-label input[type="radio"] + .radio-indicator {
   position: absolute;
   left: 0;
-  top: 2px;
+  top: 0;
 
   width: 20px;
   height: 20px;
