@@ -927,7 +927,12 @@ body > input[type="radio"] {
   display: none;
 }
 
-.fatness-label input[type="radio"] + .radio-indicator {
+.fatness-label input[type="radio"]:checked
++ .radio-indicator::after {
+  display: block;
+}
+
+.radio-indicator {
   position: absolute;
   left: 0;
   top: 0;
@@ -939,27 +944,30 @@ body > input[type="radio"] {
 
 }
 
-.fatness-label input[type="radio"]:checked
-+ .radio-indicator::after {
+.radio-indicator::after {
   content: "";
   position: absolute;
-  left: 4px;
-  top: 4px;
+  display: none;
 
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: white;
+
+  left: 4px;
+  top: 4px;
 }
-.fatness-label input[type="radio"] + .radio-indicator:hover {     /*НАСТРОИТЬ ВНУТРЕННИЙ ИНДИКАТОР ПРИ НАВЕДЕНИИ*/
+
+.radio-indicator:hover {     /*НАСТРОИТЬ ВНУТРЕННИЙ ИНДИКАТОР ПРИ НАВЕДЕНИИ*/
   border: solid 2px white;
 }
 
-.fatness-label input[type="radio"]:checked
-+ .radio-indicator:hover::after {
+.radio-indicator:hover::after {
   top: 3px;
   left: 3px;
+
  }
+
 
  .additions {
   width: 705px;
