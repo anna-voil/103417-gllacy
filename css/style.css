@@ -22,8 +22,6 @@ a {
   color: #ffffff;
 }
 
-
-
 body > input[type="radio"] {
   display: none;
 }
@@ -544,6 +542,13 @@ body > input[type="radio"] {
   background: url("../img/hit.png");
   background-position: 60px 61px;
 }
+.catalog-item:hover {              /*ПОВЕДЕНИЕ ПРИ НАВЕДЕНИИ НА МОРОЖЕНОЕ*/
+
+}
+
+
+
+
 
 .catalog-item-price, .catalog-price {   /*СПИСОК МОРОЖЕНОГО*/
   margin: 0;
@@ -715,66 +720,39 @@ body > input[type="radio"] {
   width: 267px;
 }
 .social-btn {
-  position: relative;
-
   display: inline-block;
   width: 38px;
   height: 38px;
-  border: solid 3px #9db1a5;
+  border: solid 4px #dbe3de;
   border-radius: 19px;
   margin-right: 11px;
   margin-top: 13px;
+  opacity: 0.8;
 
   font-size: 0;         /*прячем текст ссылок*/
   vertical-align: middle;
   text-decoration: none;
-
 }
-.social-btn-twitter:before {    /*Спрайт социальных сетей*/
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.social-btn:hover {
+  opacity: 1;
+}
+.social-btn:active {
+  box-shadow: inset 0 3px 3px 0 #8d8e8e;
+}
 
-  width: 32px;
-  height: 32px;
-
+.social-btn-twitter {    /*Спрайт социальных сетей*/
   background: url("../img/sprite-footer.png");
-  background-position: -1px 0;
+  background-position: 0 0;
 }
-.social-btn-instagram:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 32px;
-  height: 32px;
-
+.social-btn-instagram {
   background: url("../img/sprite-footer.png");
   background-position: -50px 0;
 }
-.social-btn-facebook:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 32px;
-  height: 32px;
-
+.social-btn-facebook {
   background: url("../img/sprite-footer.png");
   background-position: -99px 0;
 }
-.social-btn-vk:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 32px;
-  height: 32px;
-
+.social-btn-vk {
   background: url("../img/sprite-footer.png");
   background-position: -148px 0;
 }
@@ -846,6 +824,11 @@ body > input[type="radio"] {
 .filter-order-wrapper, .range-filter, .fatness, .additions, .filter-button  {
   font-size: 14px;
 }
+
+
+
+
+
 
 
          /*СОРТИРОВКА*/
@@ -999,8 +982,15 @@ body > input[type="radio"] {
   background: #a6b8ae;
   color: white;
 }
-.filter-button:focus {               /*!!!!!!ДОДЕЛАТЬ!!!!!!*/
+.filter-button:hover {               /*!!!!!!ДОДЕЛАТЬ!!!!!!*/
+  background: white;
+  color: black;
+}
 
+.filter-button:active {
+  border: none;
+  background: #eaeaea;
+  box-shadow: inset 0 3px 3px 0 #6c6d6c;
 }
 
 .pager {
@@ -1017,15 +1007,32 @@ body > input[type="radio"] {
   height: 100%;
 }
 .pager li {
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   list-style-type: none;
+
+  text-align: center;
+  line-height: 26px;
+}
+.pager li:hover {
+  border-radius: 50%;
+  background: #9db1a5;
+}
+.page-active {
+  background: white;
+  border-radius: 50%;
+  color: black;
+
+}
+.pager ul:first-child {
+  color: #9db1a5;
 }
 
 
 
 
-/*Скрытая Форма обратной связи*/
+
+   /*Скрытая Форма обратной связи*/
 
 .modal-content {
   position: absolute;
