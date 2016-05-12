@@ -940,8 +940,6 @@ body > input[type="radio"] {
 }
 
 .fatness-label input[type="radio"]:checked
-+ .radio-indicator::before,
-.fatness-label input[type="radio"]:checked
 + .radio-indicator::after {
   content: "";
   position: absolute;
@@ -957,7 +955,13 @@ body > input[type="radio"] {
   border: solid 2px white;
 }
 
-.additions {
+.fatness-label input[type="radio"]:checked
++ .radio-indicator:hover::after {
+  top: 3px;
+  left: 3px;
+ }
+
+ .additions {
   width: 705px;
   margin-right: 15px;
 }
