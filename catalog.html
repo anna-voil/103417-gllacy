@@ -37,12 +37,42 @@
       <div class="user-block">
         <div class="user-search">
           <a href="#" class="search"></a>             <!--поле поиска-->
+          <form class="search-form">
+            <input type="search" name="search" placeholder="Что ищем?">
+          </form>
         </div>
         <div class="user-login">   <!--контейнер блока Вход-->
           <a class="login" href="#">Вход</a>
+          <form class="login-form" action="#" method="post">
+            <input class="login-email" type="email" placeholder="Электронная почта">
+            <input class="login-password" type="password" placeholder="Пароль">
+            <div class="clearfix">
+              <button class="button login-button" type="submit">Войти</button>
+              <a class="restore" href="#">Забыли пароль?</a>
+              <a class="registration" href="#">Новая регистрация</a>
+            </div>
+          </form>
         </div>
-        <div class="user-cart">
+        <div class="user-cart user-cart-full">
           <a class="cart cart-full" href="#">2 товара</a>                <!--КОРЗИНА ДОДЕЛАТЬ-->
+          <div class="cart-ice-creams">
+            <div class="cart-ice cart-orange">
+              <a href="#" class="cart-ice-del" title="Удалить">×</a>
+              <img class="cart-img" src="img/ice-cart-1.png">
+              <p class="cart-ice-description">Пломбир с апельсиновым джемом</p>
+              <p>1,5 кг х <span>200 руб.</span></p>
+              <span class="cart-price">300 руб.</span>
+            </div>
+            <div class="cart-ice cart-strawberry">
+              <a href="#" class="cart-ice-del" title="Удалить">×</a>
+              <img class="cart-img" src="img/ice-cart-2.png">
+              <p class="cart-ice-description">Клубничный пломбир с присыпкой из белого шоколада</p>
+              <p>1,5 кг х <span>300 руб.</span></p>
+              <span class="cart-price">450 руб.</span>
+            </div>
+            <p  class="cart-sum">Итого:<span>750 руб.</span></p>
+            <a class="button" href="#">Оформить заказ</a>
+          </div>
         </div>
       </div>
     </div>
@@ -108,16 +138,30 @@
           <div class="additions">                     <!--Наполнители-->
             <p>Наполнители:</p>
               <div class="additions-options">
-                <input type="checkbox" name="chocolate" id="chocolate" checked> <!--Шоколадные-->
-                <label for="chocolate">шоколадные</label>
-                <input type="checkbox" name="sugar" id="sugar" checked>         <!--Сахарные присыпки-->
-                <label for="sugar">сахарные присыпки</label>
-                <input type="checkbox" name="fruits" id="fruits">               <!--Фрукты-->
-                <label for="fruits">фрукты</label>
-                <input type="checkbox" name="syrups" id="syrups">               <!--Сиропы-->
-                <label for="syrups">сиропы</label>
-                <input type="checkbox" name="chocolate" id="jam">               <!--Джемы-->
-                <label for="jam">джемы</label>
+                <label for="chocolate" class="addition">
+                  <input type="checkbox" name="chocolate" id="chocolate" checked> <!--Шоколадные-->
+                  <span class="checkbox-indicator"></span>шоколадные
+                </label>
+
+                <label for="sugar" class="addition">
+                  <input type="checkbox" name="sugar" id="sugar" checked>         <!--Сахарные присыпки-->
+                  <span class="checkbox-indicator"></span>сахарные присыпки
+                </label>
+
+                <label for="fruits" class="addition">
+                  <input type="checkbox" name="fruits" id="fruits">               <!--Фрукты-->
+                  <span class="checkbox-indicator"></span>фрукты
+                </label>
+
+                <label for="syrups" class="addition">
+                  <input type="checkbox" name="syrups" id="syrups">               <!--Сиропы-->
+                  <span class="checkbox-indicator"></span>сиропы
+                </label>
+
+                <label for="jam" class="addition">
+                  <input type="checkbox" name="chocolate" id="jam">               <!--Джемы-->
+                  <span class="checkbox-indicator"></span>джемы
+                </label>
               </div>
           </div>
             <input class="filter-button" type="submit" value="Применить">    <!--Кнопка отправки формы-->
@@ -134,7 +178,7 @@
           <img class="catalog-img" src="img/items/2.png"  width="" height="" alt="Кофейное + шоколад">
           <p class="catalog-price">380 ₽<span>/кг</span></p>
           <p class="catalog-description">Сливочно-кофейное с кусочками шоколада</p>
-          <a class="button" href="#">Быстрый просмотр</a>
+          <a class="button quick-preview" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">   <!--Клубничное + белый шоколад-->
           <img class="catalog-img" src="img/items/3.png"  width="" height="" alt="Клубничное + белый шоколад">
@@ -164,7 +208,7 @@
           <img class="catalog-img" src="img/items/7.png"  width="" height="" alt="Сливочно-лимонное + карамель">
           <p class="catalog-price">375 ₽<span>/кг</span></p>
           <p class="catalog-description">Сливочно-лимонное с карамельной присыпкой</p>
-          <a class="button" href="#">Быстрый просмотр</a>
+          <a class="button quick-preview" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">   <!--Сливочное + шоколадная стружка-->
           <img class="catalog-img" src="img/items/8.png"  width="" height="" alt="Сливочное + шоколадная стружка">
