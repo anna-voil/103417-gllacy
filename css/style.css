@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,900&subset=cyrillic);
 /*СТИЛИ И РАЗМЕРЫ ШРИФТОВ*/
 html {
   box-sizing: border-box;
@@ -17,13 +18,7 @@ body {
   color: #ffffff;
   background: #849d8f;
 }
-@font-face {
-  src: url(../fonts/Roboto_Black);
-  src: url(../fonts/Roboto_Bold);
-  src: url(../fonts/Roboto_Medium);
-  src: url(../fonts/Roboto_Regular);
-  src: url(../fonts/Roboto_Light);
-}
+
 
 a {
   text-decoration: none;
@@ -369,6 +364,7 @@ body > input[type="radio"] {
   position: relative;
   width: 32px;
 }
+
 .search-form {
   position: absolute;
   top: 35px;
@@ -405,6 +401,7 @@ body > input[type="radio"] {
   padding: 20px;
   background: #f8f7f4;
   box-shadow: 3px 10px 40px 0 #323232;
+  z-index: 1;
 
   display: none;
 }
@@ -531,8 +528,15 @@ body > input[type="radio"] {
   background: url("../img/sprite-black-header.png") no-repeat;
   background-position: 5px 0;
 }
-
-
+.user-search:hover .search-form {
+  display: block;
+}
+.user-login:hover .login-form {
+  display: block;
+}
+.user-cart-full:hover .cart-ice-creams {
+  display: block;
+}
 
 .login {                /*ВХОД*/
   position: relative;
@@ -573,7 +577,7 @@ body > input[type="radio"] {
 
 .cart-empty:hover {
   background: url("../img/sprite-black-header.png") no-repeat;
-  background-position: 10px -82px;
+  background-position: 15px -82px;
 
 }
 .user-cart-full {
@@ -683,17 +687,20 @@ body > input[type="radio"] {
   position: absolute;
   top: 0;
   left: 0;
-}
 
+}
+.catalog-img {
+  margin-bottom: 5px;
+}
 .catalog-item-container:hover {
-  top: -10px;
-  left: -10px;
-  height: 420px;
-  background: #9db1a5;
+  top: -5px;
+  left: -5px;
+  height: 405px;
+  background-color: rgba(248, 247, 244, 0.3);
   border-radius: 5px;
 
-  padding: 10px 10px 15px 10px;
-  box-shadow: 0 10px 40px 0 #323232;
+  padding: 5px 5px 15px 5px;
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
 
   z-index: 1;
 }
@@ -725,6 +732,7 @@ body > input[type="radio"] {
 
   background: url("../img/hit.png");
   background-position: 60px 61px;
+  z-index: 2;
 }
 .catalog-item:hover {              /*ПОВЕДЕНИЕ ПРИ НАВЕДЕНИИ НА МОРОЖЕНОЕ*/
 
@@ -748,6 +756,7 @@ body > input[type="radio"] {
 }
 
 .general-description {
+  height: 305px;
   font-size: 0;
   color: #323232;
   padding: 25px 20px;
@@ -776,6 +785,7 @@ body > input[type="radio"] {
   max-width: 540px;
   height: 90px;
 }
+
 
 .feature:nth-child(2n+1) {
   margin-right: 0;
@@ -880,6 +890,18 @@ body > input[type="radio"] {
 
   border-radius: 15px;
 }
+.subscribe-email {
+  position: absolute;
+  bottom: 38px;
+
+  width: 365px;
+  height: 45px;
+  border: solid 1px #d3d3d2;
+  border-radius: 5px;
+  padding-left: 15px;
+  line-height: 45px;
+  color: #999999;
+}
 
 .subscribe input[name="email"] {
   bottom: 40px;
@@ -890,14 +912,16 @@ body > input[type="radio"] {
   position: relative;
   min-height: 430px;
   background: url("../img/map.png") no-repeat center;
-  margin-bottom: 8px;
 }
 
 .address {
+  font-family: "Roboto";
+
   position: absolute;
   right: 2.3%;
   margin-top: 62px;
   background: #ffffff;
+  border-radius: 15px;
   color: #323232;
 
   width: 300px;
@@ -905,6 +929,27 @@ body > input[type="radio"] {
   padding: 30px 25px;
 }
 
+.address p:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.address-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.address-text-highlight {
+  font-weight: bold;
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+
+}
+.address .button {
+  text-align: center;
+  left: 20px;
+}
 .main-footer {
   min-height: 100px;
   border-top: solid 1px #a6b8ae;
@@ -965,11 +1010,13 @@ body > input[type="radio"] {
 }
 
 .footer-menu-left {
+  margin-top: 10px;
   float: left;
   width: 140px;
 }
 
 .footer-menu-right {
+  margin-top: 10px;
   float: left;
   width: 190px;
 
@@ -1311,11 +1358,15 @@ body > input[type="radio"] {
   text-align: center;
   line-height: 26px;
 }
+.pager-first-page li:first-child:hover {
+  background: none;
+}
 
 .pager li:hover {
   border-radius: 50%;
   background: #9db1a5;
 }
+
 
 .page-active {
   background: white;
