@@ -952,6 +952,16 @@ body > input[type="radio"] {
   min-height: 430px;
   background: url("../img/map.png") no-repeat center;
 }
+.map::before {
+  content: "";
+  position: absolute;
+  top: 140px;
+  left: 265px;
+
+  width: 218px;
+  height: 142px;
+  background: url("../img/pin.png");
+}
 
 .address {
   font-family: "Roboto";
