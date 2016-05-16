@@ -252,29 +252,30 @@ body > input[type="radio"] {
 
 .main-navigation .catalog-sub-menu {
   position: absolute;
-  top: 35px;
+  top: 30px;
   left: 0;
   z-index: 1;
   overflow: hidden;
 
   margin: 0;
   width: 143px;
-  background: #f8f7f4;
+  padding-top: 8px;
   border-radius: 5px;
+
 
   display: none;
 }
 
 .main-navigation-item:hover .catalog-sub-menu {
   display: block;
-}
-
-.catalog-sub-menu>ul {
-  margin: 0 5px;
+  margin: 0;
 
 }
+
+
 .catalog-sub-menu>li {
   padding: 10px;
+  background: #f8f7f4;
 }
 .catalog-sub-menu>li:hover {
   background: #fbded7;
@@ -294,6 +295,8 @@ body > input[type="radio"] {
 }
 .catalog-sub-menu>li:first-child {
   position: relative;
+  border-radius: 5px 5px 0 0;
+
 }
 .catalog-sub-menu>li:first-child::after {
   position: absolute;
@@ -358,7 +361,7 @@ body > input[type="radio"] {
   display: inline-block;
   vertical-align: middle;
   height: 32px;
-  padding: 8px 0;
+  padding-top: 5px;
   margin-right: 10px;
 
   font-size: 14px;
@@ -525,7 +528,7 @@ body > input[type="radio"] {
   position: relative;
   vertical-align: middle;
   width: 25px;
-  height: 25px;
+  height: 30px;
 
   background: url("../img/sprite-white-header.png") no-repeat;
   background-position: 5px 0;
@@ -558,7 +561,6 @@ body > input[type="radio"] {
   margin-right: 10px;
 
   width: 22px;
-  height: 20px;
 
   background: url("../img/sprite-white-header.png") no-repeat;
   background-position: 12px -42px;
@@ -572,16 +574,12 @@ body > input[type="radio"] {
 .cart {                /*КОРЗИНА*/
   position: relative;
 
-  padding-left: 44px;
-
-  width: 117px;
+  padding: 5px 0 5px 44px;
 
 }
 
 .cart-empty {
-
-  width: 25px;
-  height: 25px;
+  padding: 5px 0;
 
   background: url("../img/sprite-white-header.png") no-repeat;
   background-position: 15px -86px;
@@ -600,8 +598,7 @@ body > input[type="radio"] {
 
 .cart-full {
   position: relative;
-  width: 20px;
-  height: 20px;
+  padding: 5px 0;
 
   background: url("../img/sprite-black-header.png") no-repeat;
   background-position: 15px -125px;
@@ -610,9 +607,6 @@ body > input[type="radio"] {
 
 }
 
-.cart-full:hover {
-
-}
 
 .search:hover, .login:hover, .cart:hover {
   color: black;
