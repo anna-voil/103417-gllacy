@@ -401,6 +401,7 @@ body > input[type="radio"] {
 .user-login {
   position: relative;
   width: 92px;
+  padding-top: 7px;
 }
 .login-form {
   position: absolute;
@@ -441,6 +442,7 @@ body > input[type="radio"] {
 }
 .user-cart {
   position: relative;
+  padding-top: 7px;
 
   width: 117px;
   margin-right: 0;
@@ -519,7 +521,9 @@ body > input[type="radio"] {
   font-size: 15px;
   font-weight: 600;
 }
-
+.cart {
+  padding-left: 45px;
+}
 
 
 
@@ -554,9 +558,13 @@ body > input[type="radio"] {
   display: block;
 }
 
-.login {                /*ВХОД*/
+.login, .cart {
+  display: block;
   position: relative;
+  height: 25px;
 
+}
+.login {                /*ВХОД*/
   padding-left: 44px;
   margin-right: 10px;
 
@@ -571,15 +579,11 @@ body > input[type="radio"] {
   background-position: 15px -40px;
 }
 
-.cart {                /*КОРЗИНА*/
-  position: relative;
+              /*КОРЗИНА*/
 
-  padding: 5px 0 5px 44px;
 
-}
 
 .cart-empty {
-  padding: 5px 0;
 
   background: url("../img/sprite-white-header.png") no-repeat;
   background-position: 15px -86px;
@@ -607,10 +611,8 @@ body > input[type="radio"] {
 
 }
 
-
 .search:hover, .login:hover, .cart:hover {
   color: black;
-  font-weight: 400;
 }
 
 .header-contact {
