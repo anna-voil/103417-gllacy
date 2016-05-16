@@ -47,7 +47,26 @@ body > input[type="radio"] {
   min-width: 900px;
 
   background: #849d8f url("../img/slide-1.png") no-repeat top center;
+
+  transition: background-image 0.5s ease, background-color 0.5s ease;
 }
+
+.site-wrapper:before,
+.site-wrapper:after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper:before,
+.site-wrapper:after {
+  background-image: url("../img/slide-1.png");
+}
+
+.site-wrapper:after {
+  background-image: url("../img/slide-2.png");
+}
+
 
 .content-wrapper {
   margin: 0 auto;
