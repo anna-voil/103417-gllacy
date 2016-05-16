@@ -203,13 +203,7 @@
         <p>Сделано в <a class="copyright" href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
       </section>
       </div>
-    </footer>
-
-
-
-
-                     <!--Скрытая Форма обратной связи-->
-
+    </footer>               <!--Скрытая Форма обратной связи-->
       <div class="modal-content">
         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
         <p>Мы обязательно вам ответим!</p>
@@ -217,14 +211,36 @@
           <input class="user-name" type="text" name="name" placeholder="Как вас зовут?">
           <input class="user-email" type="email"  name="email" placeholder="Ваша почта для ответа?">
           <textarea class="user-message" type="text" name="message" placeholder="Напишите что-нибудь..."></textarea>
-          <button class="button" type="submit">Отправить</button>
+          <button class="button feedback-button" type="submit">Отправить</button>
         </form>
       </div>
-
-
-
     </div>
   </div>
+
+
+  <script>
+    var link = document.querySelector(".feedback-button");
+    var popup = document.querySelector(".modal-content");
+    var close = popup.querySelector(".modal-content-close");
+
+
+
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.add("modal-content-show");
+    });
+
+    close.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.remove("modal-content-show");
+    });
+
+  </script>
+
+
+
+
+
   </body>
 </html>
 
