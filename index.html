@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Главная - Мороженое Глейси</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <input type="radio" id="btn-1" name="toggle" checked>
@@ -16,8 +16,7 @@
       <header class="main-header">        <!--шапка сайта-->
         <div class="container clearfix">           <!--центровщик-->
           <div class="logo-menu-wrapper">
-            <div class="logo">
-              Глэйси
+            <div class="logo">Глэйси
             </div>
             <nav class="main-navigation">   <!--контейнер списка навигации по сайту-->
               <ul>
@@ -50,15 +49,17 @@
               </div>
               <div class="user-login">                 <!--контейнер блока Вход-->
                 <a class="login" href="#">Вход</a>
-                <form class="login-form" action="#" method="post">
-                  <input class="login-email" type="email" placeholder="Электронная почта">
-                  <input class="login-password" type="password" placeholder="Пароль">
-                  <div class="clearfix">
-                    <button class="button login-button" type="submit">Войти</button>
-                    <a class="restore" href="#">Забыли пароль?</a>
-                    <a class="registration" href="#">Новая регистрация</a>
-                  </div>
-                </form>
+                <div class="login-form-wrapper">
+                  <form class="login-form" action="#" method="post">
+                    <input class="login-email" type="email" placeholder="Электронная почта">
+                    <input class="login-password" type="password" placeholder="Пароль">
+                    <div class="clearfix">
+                      <button class="button login-button" type="submit">Войти</button>
+                      <a class="restore" href="#">Забыли пароль?</a>
+                      <a class="registration" href="#">Новая регистрация</a>
+                    </div>
+                  </form>
+                </div>
               </div>
               <div class="user-cart">
                 <a class="cart cart-empty" href="#">Пусто</a>                <!--КОРЗИНА ДОДЕЛАТЬ-->
@@ -69,10 +70,10 @@
               <p class="header-contact-phone">8 812 450-25-25</p>
             </div>
           </div>
-      </div>
-    </header>
+        </div>
+      </header>
     <main>
-      <div class="container">
+      <div class="container clearfix">
         <div class="slider">                             <!--СЛАЙДЕР-->
           <div class="slide" id="slide-1">
             <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
@@ -197,21 +198,20 @@
         </div>
       </section>
       <section class="footer-copyright footer-item">   <!--авторы-->
-        <a href="#">
-          <img src="img/logo-academy.png" width="" height=""> <!--лого HTMLAcademy-->
+        <a href="https://htmlacademy.ru">
+          <img src="img/logo-academy.png" width="110" height="37" alt="HTMLAcademy"> <!--лого HTMLAcademy-->
         </a>
         <p>Сделано в <a class="copyright" href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
       </section>
       </div>
     </footer>               <!--Скрытая Форма обратной связи-->
-
         <div class="modal-content">
           <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
           <p>Мы обязательно вам ответим!</p>
           <form class="feedback-form" action="#" method="post">
             <input class="user-name" type="text" name="name" placeholder="Как вас зовут?">
             <input class="user-email" type="email"  name="email" placeholder="Ваша почта для ответа?">
-            <textarea class="user-message" type="text" name="message" placeholder="Напишите что-нибудь..."></textarea>
+            <textarea class="user-message" name="message" placeholder="Напишите что-нибудь..."></textarea>
             <button class="button" type="submit">Отправить</button>
           </form>
         </div>
